@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reright Solutions LLC - Software Development & Consulting</title>
+    <meta name="description" content="Reright Solutions builds applications, websites, and provides expert consulting in SEO, web development, and digital strategy.">
+    <meta name="theme-color" content="#0B0D17">
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- PARTICLES BACKGROUND -->
+    <div id="tsparticles"></div>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar">
+        <a href="#home" class="nav-brand" data-page="home">
+            <!-- Nav Logo Mark (terminal prompt) -->
+            <svg class="nav-logo" viewBox="0 0 90 35" width="72" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="nav-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#00D4FF"/>
+                        <stop offset="100%" stop-color="#0066FF"/>
+                    </linearGradient>
+                </defs>
+                <text x="2" y="25" font-family="'Courier New', monospace" font-weight="700" font-size="22" fill="url(#nav-grad)">$</text>
+                <text x="22" y="25" font-family="'Courier New', monospace" font-weight="700" font-size="22" fill="#F0F4FF" letter-spacing="1">RS_</text>
+                <rect x="74" y="7" width="2" height="18" fill="#00D4FF">
+                    <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+                </rect>
+            </svg>
+            <span class="brand-text"><span class="brand-re">RE</span>RIGHT</span>
+        </a>
+
+        <div class="nav-links" id="nav-links">
+            <a href="#home" class="nav-link active" data-page="home">Home</a>
+            <a href="#created" class="nav-link" data-page="created">Created</a>
+            <a href="#consulting" class="nav-link" data-page="consulting">Consulting</a>
+            <a href="#about" class="nav-link" data-page="about">About</a>
+            <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#home" class="mobile-link active" data-page="home">Home</a>
+        <a href="#created" class="mobile-link" data-page="created">Created</a>
+        <a href="#consulting" class="mobile-link" data-page="consulting">Consulting</a>
+        <a href="#about" class="mobile-link" data-page="about">About</a>
+        <a href="#contact" class="mobile-link" data-page="contact">Contact</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HOME -->
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="hero-logo">
+                    <svg class="logo-main" viewBox="0 0 180 70" width="320" height="125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="hero-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#00D4FF"/>
+                                <stop offset="100%" stop-color="#0066FF"/>
+                            </linearGradient>
+                            <filter id="glow">
+                                <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <g filter="url(#glow)">
+                            <text x="5" y="48" font-family="'Courier New', monospace" font-weight="700" font-size="40" fill="url(#hero-grad)">$</text>
+                            <text x="40" y="48" font-family="'Courier New', monospace" font-weight="700" font-size="40" fill="#F0F4FF" letter-spacing="2">RS_</text>
+                            <rect x="148" y="18" width="3" height="32" fill="#00D4FF">
+                                <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+                            </rect>
+                        </g>
+                    </svg>
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Reright</span> Solutions
+                </h1>
+                <p class="hero-tagline">We build. We consult. We make it right.</p>
+                <p class="hero-subtitle">Custom software development & expert consulting for the modern web.</p>
+                <div class="hero-cta">
+                    <button class="btn-primary" data-page="contact">Get in Touch</button>
+                    <button class="btn-secondary" data-page="created">See Our Work</button>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16,18 22,12 16,6"/>
+                            <polyline points="8,6 2,12 8,18"/>
+                            <line x1="14" y1="4" x2="10" y2="20"/>
+                        </svg>
+                    </div>
+                    <h3>Application Development</h3>
+                    <p>Full-stack web and mobile applications built with modern frameworks and best practices.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                            <path d="M11,8 L11,14"/>
+                            <path d="M8,11 L14,11"/>
+                        </svg>
+                    </div>
+                    <h3>SEO & Consulting</h3>
+                    <p>Data-driven strategies to improve your search rankings and digital presence.</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>Website Design</h3>
+                    <p>Responsive, performant websites that look great on every device.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CREATED -->
+        <section id="created" class="page">
+            <h2 class="section-title">What We've <span class="gradient-text">Created</span></h2>
+            <p class="section-subtitle">A showcase of projects built by our team.</p>
+
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <span class="project-badge live">Live</span>
+                        <h3 class="orbi-title">
+                            <svg class="orbi-logo" viewBox="0 0 82 24" width="82" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="orbi-g1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#00D4FF"/>
+                                        <stop offset="100%" stop-color="#0066FF"/>
+                                    </linearGradient>
+                                    <linearGradient id="orbi-g2" x1="0%" y1="100%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#0066FF"/>
+                                        <stop offset="100%" stop-color="#7C3AED"/>
+                                    </linearGradient>
+                                </defs>
+                                <!-- Concentric arcs -->
+                                <path d="M2,12 A10,10 0 0,1 22,12" stroke="url(#orbi-g1)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <path d="M22,12 A10,10 0 0,1 2,12" stroke="url(#orbi-g2)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <path d="M6,12 A6,6 0 0,1 18,12" stroke="url(#orbi-g2)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <path d="M18,12 A6,6 0 0,1 6,12" stroke="url(#orbi-g1)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <circle cx="12" cy="12" r="2.5" fill="url(#orbi-g1)"/>
+                                <!-- "Orbi" text -->
+                                <text x="28" y="18" font-family="Inter, sans-serif" font-weight="600" font-size="20" fill="#F0F4FF">Orbi</text>
+                            </svg>
+                        </h3>
+                    </div>
+                    <p>A video chat platform built for seamless, real-time communication. Peer-to-peer connections powered by WebRTC with no downloads required &mdash; just share a link and go.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">WebRTC</span>
+                        <span class="tech-tag">Real-Time</span>
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                    <a href="https://orbi.cool" target="_blank" rel="noopener" class="project-link">Visit orbi.cool &rarr;</a>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-header">
+                        <span class="project-badge meta">Meta</span>
+                        <h3>This Website</h3>
+                    </div>
+                    <p>The site you're looking at right now. A single-page application with particle effects, glassmorphism design, and zero build tools.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML / CSS / JS</span>
+                        <span class="tech-tag">tsParticles</span>
+                        <span class="tech-tag">SVG</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card coming-soon">
+                    <div class="project-header">
+                        <span class="project-badge muted">Coming Soon</span>
+                        <h3>More Projects</h3>
+                    </div>
+                    <p>We're always building. Check back to see what's next.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONSULTING -->
+        <section id="consulting" class="page">
+            <h2 class="section-title">Consulting <span class="gradient-text">Services</span></h2>
+            <p class="section-subtitle">Expert guidance to elevate your digital presence.</p>
+
+            <div class="services-grid">
+                <div class="service-card glass-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                            <polyline points="11,8 11,11 14,11"/>
+                        </svg>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Technical SEO audits, keyword research, on-page optimization, and content strategy to increase organic traffic and visibility.</p>
+                    <ul class="service-list">
+                        <li>Technical SEO audits</li>
+                        <li>Keyword research & strategy</li>
+                        <li>On-page & off-page optimization</li>
+                        <li>Performance & Core Web Vitals</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16,18 22,12 16,6"/>
+                            <polyline points="8,6 2,12 8,18"/>
+                        </svg>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom website builds, redesigns, and optimization using modern frameworks and best practices.</p>
+                    <ul class="service-list">
+                        <li>Custom website development</li>
+                        <li>React / Next.js applications</li>
+                        <li>Responsive design</li>
+                        <li>Performance optimization</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12,2 L12,6"/>
+                            <path d="M12,18 L12,22"/>
+                            <path d="M4.93,4.93 L7.76,7.76"/>
+                            <path d="M16.24,16.24 L19.07,19.07"/>
+                            <path d="M2,12 L6,12"/>
+                            <path d="M18,12 L22,12"/>
+                            <circle cx="12" cy="12" r="4"/>
+                        </svg>
+                    </div>
+                    <h3>Digital Strategy</h3>
+                    <p>End-to-end planning for your digital transformation, from tech stack selection to launch strategy.</p>
+                    <ul class="service-list">
+                        <li>Tech stack evaluation</li>
+                        <li>Architecture planning</li>
+                        <li>Product roadmapping</li>
+                        <li>Launch strategy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="client-section glass-card">
+                <h3>Client Projects</h3>
+                <p>Client showcases coming soon. <a href="#contact" data-page="contact" class="inline-link">Get in touch</a> to start your project.</p>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="page">
+            <h2 class="section-title">Meet the <span class="gradient-text">Team</span></h2>
+            <p class="section-subtitle">Two engineers building the future of the web.</p>
+
+            <div class="team-grid">
+                <div class="team-card glass-card">
+                    <div class="team-avatar">
+                        <div class="avatar-circle">PB</div>
+                    </div>
+                    <h3>Peter Boster</h3>
+                    <p class="team-role">Owner & Chief Vibecode Officer</p>
+                    <p class="team-bio">Founder of Reright Solutions. Full-stack developer with a passion for building applications that solve real problems. Leads company vision, client relationships, and strategic direction.</p>
+                    <a href="mailto:pboster@rerightsolutions.com" class="inline-link team-email">pboster@rerightsolutions.com</a>
+                </div>
+
+                <div class="team-card glass-card">
+                    <div class="team-avatar">
+                        <div class="avatar-circle">JS</div>
+                    </div>
+                    <h3>Josh Sewell</h3>
+                    <p class="team-role">Master Vibecoder & Technical Lead</p>
+                    <p class="team-bio">Creator of <a href="https://orbi.cool" target="_blank" rel="noopener" class="inline-link">orbi.cool</a>. Specializes in real-time systems, WebRTC, and full-stack architecture. Drives the technical execution of every project.</p>
+                    <a href="mailto:jsewell@rerightsolutions.com" class="inline-link team-email">jsewell@rerightsolutions.com</a>
+                </div>
+            </div>
+
+            <div class="company-about glass-card">
+                <h3>About Reright Solutions</h3>
+                <p>Reright Solutions LLC is a software development and consulting firm dedicated to building high-quality applications and helping businesses improve their digital presence. We specialize in modern web technologies, SEO strategy, and custom software solutions. Whether you need a new application from scratch or want to optimize what you already have &mdash; we make it right.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="page">
+            <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+            <p class="section-subtitle">Ready to start a project? Have a question? We'd love to hear from you.</p>
+
+            <div class="contact-container">
+                <div class="contact-info glass-card">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4,4 L20,4 C21.1,4 22,4.9 22,6 L22,18 C22,19.1 21.1,20 20,20 L4,20 C2.9,20 2,19.1 2,18 L2,6 C2,4.9 2.9,4 4,4 Z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <a href="mailto:support@rerightsolutions.com" class="inline-link">support@rerightsolutions.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#00D4FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21,10 C21,17 12,23 12,23 C12,23 3,17 3,10 A9,9 0 0,1 21,10 Z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>United States</span>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form glass-card" action="https://formspree.io/f/mgolpelk" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Project Request">Project Request</option>
+                            <option value="Consulting">Consulting</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-submit">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading">Sending...</span>
+                    </button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <svg viewBox="0 0 90 35" width="60" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="foot-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#00D4FF"/>
+                            <stop offset="100%" stop-color="#0066FF"/>
+                        </linearGradient>
+                    </defs>
+                    <text x="2" y="25" font-family="'Courier New', monospace" font-weight="700" font-size="22" fill="url(#foot-grad)">$</text>
+                    <text x="22" y="25" font-family="'Courier New', monospace" font-weight="700" font-size="22" fill="#F0F4FF" letter-spacing="1">RS_</text>
+                </svg>
+                <span>Reright Solutions LLC</span>
+            </div>
+            <p class="footer-copy">&copy; 2025 Reright Solutions LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- tsParticles -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
