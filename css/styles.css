@@ -453,6 +453,11 @@ p {
     color: var(--accent-purple);
 }
 
+.project-badge.beta {
+    background: rgba(251, 191, 36, 0.15);
+    color: #FBBF24;
+}
+
 .project-badge.muted {
     background: rgba(100, 116, 139, 0.15);
     color: var(--text-muted);
